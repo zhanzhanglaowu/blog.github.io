@@ -1,37 +1,62 @@
 
+
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/style.css"/>
-	<script src="/style.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="shortcut icon" href="favicon.ico">	<title>站长老五博客-个人博客</title>
-	<meta name="description" content="站长老五博客" />
+	<meta charset="utf-8"> 
+	<title>python版关键词挖掘工具-站长工具箱</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../style.css">  
+<style>
+    p{font-size:20px;}
+</style>
 </head>
 <body>
-	<div style="min-height:700px;">
-	    <div id="guanggao"></div>
-		<h1 style='color:green;'>站长老五博客</h1>
-		<p style='text-align:center;color:blue ;'>天长地久有时尽,此站绵绵无绝期.</p>
-		<table width="100%" border="1" bgcolor="Azure">
-			<tr>
-				<th>标题</th>
-				<th>发布时间</th>
-			</tr>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>关键词挖掘+查指数+百度提交-3合1版-python</h1>
+</div>
 
-			<tr><td><a target='_blank' href='/news/200.html'>外贸独立站还有前途吗</a></td><td>01-31 09:55:57</td></tr><tr><td><a target='_blank' href='/news/197.html'>使用vpn梯子翻墙后，无法访问国内网站</a></td><td>01-31 09:54:37</td></tr><tr><td><a target='_blank' href='/news/193.html'>google排名还有机会吗</a></td><td>01-31 09:51:16</td></tr><tr><td><a target='_blank' href='/news/191.html'>关键词挖掘工具，c#版</a></td><td>01-31 09:50:14</td></tr><tr><td><a target='_blank' href='/news/188.html'>必应收录查询工具</a></td><td>01-31 09:48:41</td></tr><tr><td><a target='_blank' href='/news/140.html'>为什么我这个网站没有权重</a></td><td>11-27 15:03:11</td></tr><tr><td><a target='_blank' href='/news/137.html'>微型CMS建站系统</a></td><td>11-25 12:23:38</td></tr><tr><td><a target='_blank' href='/news/136.html'>几个泛内容php程序</a></td><td>11-25 12:10:42</td></tr><tr><td><a target='_blank' href='/news/134.html'>网站防黑的基本方法</a></td><td>11-20 09:42:57</td></tr><tr><td><a target='_blank' href='/news/123.html'>汉的骄阳-钱宏伟 </a></td><td>11-19 12:47:05</td></tr><tr><td><a target='_blank' href='/news/109.html'>蜘蛛池需要多少域名网站</a></td><td>11-17 07:46:41</td></tr><tr><td><a target='_blank' href='/news/108.html'>谷歌留痕有效果吗</a></td><td>11-16 23:43:16</td></tr><tr><td><a target='_blank' href='/news/105.html'>转战谷歌排名，外贸网站</a></td><td>11-03 22:49:27</td></tr><tr><td><a target='_blank' href='/news/103.html'>腐草之荧光，怎及天心之皓月</a></td><td>11-03 22:25:56</td></tr><tr><td><a target='_blank' href='/news/90.html'>很多人说我网站丑</a></td><td>11-01 09:13:42</td></tr><tr><td><a target='_blank' href='/news/70.html'>谷歌网站排名seo优化方案</a></td><td>10-31 15:54:13</td></tr><tr><td><a target='_blank' href='/news/56.html'>0元建外贸网站</a></td><td>10-30 13:27:43</td></tr><tr><td><a target='_blank' href='/news/55.html'>百度为什么日渐衰落</a></td><td>10-30 10:49:57</td></tr><tr><td><a target='_blank' href='/news/53.html'>回忆自己做网站的历史</a></td><td>10-30 10:04:40</td></tr><tr><td><a target='_blank' href='/news/49.html'>php真是太香了</a></td><td>10-28 20:04:47</td></tr>
-		</table>
-		</div>
-		<div style="margin-top:20px;">
-				  <div class="pagebar">
-		<a class="on" href="#" title="首页">首页</a>				        </div>
-        
-        </div>
-        <div><ul class="left">
-            <li style="margin-left:0px;">友情链接：</li>
-            </ul></div>	</div>
-	<div class='pagebar2' style="margin-top:100px;">站长老五博客</div>
-	
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+        <h2 style="color:red;text-align: center;">挖掘关键词方法</h2>
+	    <p>1，设置关键词</p>
+		<p>2，设置需要挖掘的数量，默认为50000个</p>
+		<p>3，点击“开始挖掘”</p>
+		<p>=======================================</p>
+		<h2 style="color:red;">如需查询百度指数，首次使用本软件，需要设置cookie和Cipher-Text</h2>
+		<h3 style="color:green;">F12抓包方法：</h3>
+		<p>浏览器登录百度之后，跳转到百度指数页面，F12抓cookie和Cipher-Text</p>
+		<p><font color="#FF0000">cookie</font>保存到“1配置文件/baiducookie.txt”里</p>
+		<p><font color="#FF0000">Cipher-Text</font>保存到“1配置文件/Cipher-Text.txt”里</p>
+		<p style="color:green;">注意：不要用谷歌浏览器，有点问题。我用的是搜狗浏览器。</p>
+		<p>=======================================</p>
+		<h2>下载说明：</h2>
+		<p>1，点击下载，自动保存</p>
+		<p>2，保存地址：软件所在文件夹，“1文件保存位置”</p>
+	    <p>=======================================</p>
+	    <p>下载地址:<a href="https://www.4414.cn/thread-151196-1-1.html">下载地址</a></p>
+    </div>
+	<div class="col-sm-6">
+	    <h2 style="color:red;text-align: center;">百度提交方法：</h2>
+	    <p>1，<a href="https://ziyuan.baidu.com/linksubmit/index" target="_blank" rel="nofollow">获取接口调用地址</a></p>
+	    <p>2，将获取到的地址，粘贴到软件编辑框里</p>
+	    <p>3，将需要提交的链接，写入某个txt文本里，每行一个。</p>
+	    <p>4，点击“选择文件”，选中那个txt文本。</p>
+	    <p>5，点击“开始提交”</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>站长工具箱-站长老五</p>
+</div>
 </body>
 </html>
